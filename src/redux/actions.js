@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT} from "./types";
+import {INCREMENT, DECREMENT, CHANGE_THEME} from "./types";
 
 export function increment() {
     return {
@@ -9,6 +9,13 @@ export function increment() {
 export function decrement() {
     return {
         type: DECREMENT
+    }
+}
+
+export function changeTheme(newTheme) {
+    return {
+        type: CHANGE_THEME,
+        payload: newTheme
     }
 }
 
